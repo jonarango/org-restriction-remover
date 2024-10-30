@@ -9,6 +9,10 @@ reg delete "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\DataCollection
 echo [!] - Deleted Mouse Domain Limitations: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\DataCollection
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate"
 echo [!] - Deleted Update Limitations: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
+reg delete "HKEY_CURRENT_USER\SOFTWARE\Policies\Google\Chrome"
+echo [!] - Removed Local Chrome Policies: HKEY_CURRENT_USER\SOFTWARE\Policies\Google\Chrome
+reg delete "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Edge"
+echo [!] - Removed Local Edge Policies: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Edge
 echo [!] - Aplying Changes!
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 echo [!] - Done!
